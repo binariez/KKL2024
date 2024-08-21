@@ -1,0 +1,22 @@
+{
+    "name": "raaa/mongo",
+    "description": "php+mongodb",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Azhar SS",
+            "email": "azhacra@gmail.com"
+        }
+    ],
+    "require": {
+        "ext-mongodb": "*",
+        "mongodb/mongodb": "^1.19",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "config": {
+        "platform": {
+            "php": "8.1"
+        }
+    }
+}
