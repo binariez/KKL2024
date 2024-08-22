@@ -26,7 +26,7 @@
         </select>
         <input type="text" name="tahun" value="2024" readonly>
         <input type="text" name="field" placeholder="Field" required autofocus>
-        <input type="text" name="ha" placeholder="Ha" required>
+        <input type="text" name="ha" placeholder="Ha" inputmode="numeric" required>
         <input type="submit" value="Submit" name="submit">
 
     </form>
