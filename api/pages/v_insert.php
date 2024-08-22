@@ -1,7 +1,7 @@
 <style>
     .form-container {
         margin-left: 3rem;
-        max-width: 15vw;
+        max-width: 50%;
     }
 
     .form {
