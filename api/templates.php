@@ -13,8 +13,5 @@ if (isset($_POST['submit'])) {
 
     $col->insertOne($template);
 
-    echo '
-    <script>
-        window.location.href="/mongo/api/";
-    </script>';
+    header("Location: /api");
 }

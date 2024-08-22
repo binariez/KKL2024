@@ -8,10 +8,7 @@
             "src": "/",
             "dest": "/api/index.php"
         },
-        {
-            "src": "/index.php",
-            "dest": "/api/index.php"
-        },
+
         {
             "src": "/public/(.*)",
             "dest": "/$1"
