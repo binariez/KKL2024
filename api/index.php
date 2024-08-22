@@ -1,6 +1,6 @@
 <?php
 error_reporting(E_ALL ^ E_DEPRECATED);
-require_once __DIR__ . '/Connection.php';
+require_once __DIR__ . '/functions/Connection.php';
 require_once __DIR__ . '/templates.php';
 ?>
 
