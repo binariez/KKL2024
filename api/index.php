@@ -1,7 +1,7 @@
 <?php
 error_reporting(E_ALL ^ E_DEPRECATED);
 require_once __DIR__ . '/functions/Connection.php';
-require_once __DIR__ . '/templates.php';
+require_once __DIR__ . '/template.php';
 ?>
 
 <!DOCTYPE html>
@@ -43,7 +43,6 @@ require_once __DIR__ . '/templates.php';
                 </tr>
 
                 <?php
-
                 $i = 1;
                 foreach ($db->estate_sbe->find(["kategori" => "OIL PALM"]) as $d) {
                     foreach ($c = $db->estate_sbe_cek->find(["field" => $d["field"]]) as $cek) {
@@ -96,7 +95,14 @@ require_once __DIR__ . '/templates.php';
 
         <hr><br><br>
 
-        <?php include_once __DIR__ . '/pages/v_insert.php' ?>
+        <?php
+        if (!isset($_GET['input'])) {
+            include_once __DIR__ . '/pages/v_menu.php';
+        } else {
+            $est = $_GET['input'];
+            include __DIR__ . '/pages/v_insert.php';
+        }
+        ?>
 
     </div>
     <script src="../public/export/exportToExcel.js" defer></script>
