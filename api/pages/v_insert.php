@@ -1,7 +1,9 @@
 <style>
     .form-container {
-        margin-left: 3rem;
-        max-width: 50%;
+        transform: translateX(50%);
+        max-width: 51%;
+        text-align: center;
+        font-size: larger;
     }
 
     .form {
@@ -17,14 +19,14 @@
 </style>
 
 <div class="form-container">
+    <b><u><span>INPUT FIELD SEI BALAI ESTATE</span></u></b> <br><br>
     <form action="index.php" method="post" class="form">
 
-        <input type="text" name="bulan" placeholder="bulan" value="Agustus" readonly>
-        <select name="kategori">
+        <select name="kategori" required>
+            <option selected hidden value="">--KATEGORI--</option>
             <option value="OIL PALM">OIL PALM</option>
             <option value="RUBBER">RUBBER</option>
         </select>
-        <input type="text" name="tahun" value="2024" readonly>
         <input type="text" name="field" placeholder="Field" required autofocus>
         <input type="text" name="ha" placeholder="Ha" inputmode="numeric" required>
         <input type="submit" value="Submit" name="submit">

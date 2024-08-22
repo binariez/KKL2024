@@ -3,15 +3,19 @@
 if (isset($_POST['submit'])) {
 
     // nilai hasil input
-    $bln = $_POST['bulan'];
+    $bln = "8";
+    $thn = "2024";
+    $est = $_POST['estate'];
     $kat = $_POST['kategori'];
-    $thn = $_POST['tahun'];
     $field = $_POST['field'];
     $ha = $_POST['ha'];
 
-    $template = insertTemplate(($bln . ' ' . $thn), $kat, $field, $ha, false, false, "N/A", false, false, "N/A", false, false, "N/A", false, false, "N/A");
+    $estate = insertEstate($est, $kat, $field, $ha);
 
-    $col->insertOne($template);
+    $template = insertTemplate($bln, $thn, $field, false, false, "N/A", false, false, "N/A", false, false, "N/A", false, false, "N/A");
 
+    if ($db->estate_sbe->insertOne($estate)) {
+        $db->estate_sbe_cek->insertOne($template);
+    }
     header("Location: /api");
 }

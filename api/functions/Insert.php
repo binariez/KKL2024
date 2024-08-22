@@ -1,12 +1,22 @@
 <?php
 
-function insertTemplate($bln, $kat, $field, $ha, $w1a, $w1b, $w1c, $w2a, $w2b, $w2c, $w3a, $w3b, $w3c, $w4a, $w4b, $w4c)
+function insertEstate($est, $kat, $field, $ha)
+{
+    $arr = array(
+        "estate"   => $est,
+        "kategori"   => $kat,
+        "field" => $field,
+        "ha"    => $ha,
+    );
+    return $arr;
+}
+
+function insertTemplate($bln, $thn, $field, $w1a, $w1b, $w1c, $w2a, $w2b, $w2c, $w3a, $w3b, $w3c, $w4a, $w4b, $w4c)
 {
     $arr = array(
         "bln"   => $bln,
-        "kat"   => $kat,
+        "thn"   => $thn,
         "field" => $field,
-        "ha"    => $ha,
         "w1"    => [
             "w1a"   => $w1a,
             "w1b"   => $w1b,

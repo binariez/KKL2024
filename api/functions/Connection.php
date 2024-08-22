@@ -10,5 +10,3 @@ $uri = 'mongodb+srv://' . $_ENV['MDB_USER'] . ':' . $_ENV['MDB_PASS'] . '@' . $_
 $client = new MongoDB\Client($uri);
 
 $db = $client->parit;
-
-$col = $db->parit2;
