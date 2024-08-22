@@ -1,9 +1,10 @@
 <?php
 
-function insertTemplate($bln, $field, $ha, $w1a, $w1b, $w1c, $w2a, $w2b, $w2c, $w3a, $w3b, $w3c, $w4a, $w4b, $w4c)
+function insertTemplate($bln, $kat, $field, $ha, $w1a, $w1b, $w1c, $w2a, $w2b, $w2c, $w3a, $w3b, $w3c, $w4a, $w4b, $w4c)
 {
     $arr = array(
         "bln"   => $bln,
+        "kat"   => $kat,
         "field" => $field,
         "ha"    => $ha,
         "w1"    => [

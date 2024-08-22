@@ -12,8 +12,8 @@ require_once __DIR__ . '/templates.php';
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="public/reset.css" />
-    <link rel="stylesheet" href="public/style.css" />
+    <link rel="stylesheet" href="../public/reset.css" />
+    <link rel="stylesheet" href="../public/style.css" />
     <title>Dashboard</title>
 </head>
 
@@ -86,7 +86,7 @@ require_once __DIR__ . '/templates.php';
             </tbody>
         </table>
         <br />
-        <input style="height: 2rem;"
+        <input style="height: 2rem; cursor: pointer;"
             type="button"
             value="Export"
             onclick="exportToExcel('data')" />
@@ -96,9 +96,7 @@ require_once __DIR__ . '/templates.php';
         <?php include_once __DIR__ . '/pages/v_insert.php' ?>
 
     </div>
-    <script src="index.js"></script>
-
-    <script src="public/export/exportToExcel.js" defer></script>
+    <script src="../public/export/exportToExcel.js" defer></script>
 </body>
 
 </html>

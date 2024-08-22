@@ -1,9 +1,33 @@
-<form action="index.php" method="post">
+<style>
+    .form-container {
+        margin-left: 3rem;
+        max-width: 15vw;
+    }
 
-    <input type="text" name="bulan" placeholder="bulan" required>
-    <input type="text" name="tahun" value="2024" readonly>
-    <input type="text" name="field" placeholder="field" required>
-    <input type="text" name="ha" placeholder="ha" required>
-    <input type="submit" value="submit" name="submit">
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
 
-</form>
+    input[type="submit"] {
+        cursor: pointer;
+        height: 2rem;
+    }
+</style>
+
+<div class="form-container">
+    <form action="index.php" method="post" class="form">
+
+        <input type="text" name="bulan" placeholder="bulan" value="Agustus" readonly>
+        <select name="kategori">
+            <option value="OIL PALM">OIL PALM</option>
+            <option value="RUBBER">RUBBER</option>
+        </select>
+        <input type="text" name="tahun" value="2024" readonly>
+        <input type="text" name="field" placeholder="Field" required autofocus>
+        <input type="text" name="ha" placeholder="Ha" required>
+        <input type="submit" value="Submit" name="submit">
+
+    </form>
+</div>
