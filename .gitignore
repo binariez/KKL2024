@@ -1,2 +1,4 @@
 /.env
 /vendor
+/api/dist
+/public/dist
