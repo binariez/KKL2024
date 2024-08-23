@@ -44,8 +44,8 @@ require_once __DIR__ . '/template.php';
 
                 <?php
                 $i = 1;
-                foreach ($db->estate_sbe->find(["kategori" => "OIL PALM"]) as $d) {
-                    foreach ($c = $db->estate_sbe_cek->find(["field" => $d["field"]]) as $cek) {
+                foreach ($db->estate_GBE->find(["kategori" => "OIL PALM"]) as $d) {
+                    foreach ($c = $db->estate_GBE_cek->find(["field" => $d["field"]]) as $cek) {
                 ?>
                         <tr style="text-align: center; border-color: black">
 
@@ -130,15 +130,6 @@ require_once __DIR__ . '/template.php';
         <hr><br><br>
 
         <a href="client.php"><button>Halaman Client</button></a>
-
-        <?php
-        if (!isset($_GET['input'])) {
-            include_once __DIR__ . '/pages/v_menu.php';
-        } else {
-            $est = $_GET['input'];
-            include __DIR__ . '/pages/v_insert.php';
-        }
-        ?>
 
     </div>
     <script src="../public/export/exportToExcel.js" defer></script>

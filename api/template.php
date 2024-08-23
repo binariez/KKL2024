@@ -2,7 +2,6 @@
 
 if (isset($_POST['estate'])) {
 
-    // nilai hasil input
     $est = "estate_" . $_POST['estate'];
     $cek = "estate_" . $_POST['estate'] . "_cek";
 
