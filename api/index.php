@@ -129,6 +129,8 @@ require_once __DIR__ . '/template.php';
 
         <hr><br><br>
 
+        <a href="client.php"><button>Halaman Client</button></a>
+
         <?php
         if (!isset($_GET['input'])) {
             include_once __DIR__ . '/pages/v_menu.php';
