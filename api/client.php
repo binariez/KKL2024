@@ -135,7 +135,7 @@ require_once __DIR__ . '/template.php';
                                                     <div class="col-12">
                                                         <div class="form-group">
                                                             <label for="field">Field</label>
-                                                            <input type="text" maxlength="6" id="field" class="form-control"
+                                                            <input type="text" maxlength="6" id="field" class="form-control text-capitalize"
                                                                 name="field" placeholder="cth: P12345" required>
                                                         </div>
                                                     </div>
