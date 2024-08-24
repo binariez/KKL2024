@@ -18,5 +18,5 @@ if (isset($_POST['estate'])) {
     if ($db->$est->insertOne($estate)) {
         $db->$cek->insertOne($ceklis);
     }
-    header("Location: /api");
+    header("Location: /api?pilihan=" . $_POST['estate']);
 }

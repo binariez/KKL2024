@@ -115,11 +115,11 @@ require_once __DIR__ . '/template.php';
                                                         <div class="form-group">
                                                             <label for="estate">Estate</label>
                                                             <select id="estate" name="estate" class="form-select">
-                                                                <option value="GBE">GURACH BATU</option>
-                                                                <option value="KPE">KWALA PIASA</option>
-                                                                <option value="SBE">SEI BALAI</option>
-                                                                <option value="SRE">SERBANGAN</option>
-                                                                <option value="TRE">TANAH RAJA</option>
+                                                                <option value="gbe">GURACH BATU</option>
+                                                                <option value="kpe">KWALA PIASA</option>
+                                                                <option value="sbe">SEI BALAI</option>
+                                                                <option value="sre">SERBANGAN</option>
+                                                                <option value="tre">TANAH RAJA</option>
                                                             </select>
                                                         </div>
                                                     </div>
@@ -135,14 +135,14 @@ require_once __DIR__ . '/template.php';
                                                     <div class="col-12">
                                                         <div class="form-group">
                                                             <label for="field">Field</label>
-                                                            <input type="text" maxlength="6" id="field" class="form-control text-capitalize"
+                                                            <input type="text" maxlength="6" id="field" class="form-control text-uppercase"
                                                                 name="field" placeholder="cth: P12345" required>
                                                         </div>
                                                     </div>
                                                     <div class="col-12">
                                                         <div class="form-group">
                                                             <label for="ha">Ha</label>
-                                                            <input type="text" inputmode="numeric" maxlength="6" id="ha" class="form-control"
+                                                            <input type="text" inputmode="numeric" maxlength="7" id="ha" class="form-control"
                                                                 name="ha" placeholder="cth: 23,6" required>
                                                         </div>
                                                     </div>
