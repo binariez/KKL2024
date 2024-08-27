@@ -71,6 +71,14 @@ if (!cekLogin()) {
 
                         <li
                             class="sidebar-item  ">
+                            <a href="index.php" class='sidebar-link'>
+                                <i class="bi bi-table"></i>
+                                <span>Lihat Data</span>
+                            </a>
+                        </li>
+
+                        <li
+                            class="sidebar-item  ">
                             <a href="logout.php" class='sidebar-link'>
                                 <i class="bi bi-person-badge-fill"></i>
                                 <span>Logout</span>
