@@ -1,0 +1,16 @@
+#auth {
+    height: 100vh;
+    overflow-x: hidden;
+}
+#auth #auth-left {
+    padding: 5rem;
+}
+#auth #auth-left .auth-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+#auth #auth-left .auth-subtitle {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    color: #a8aebb;
+}

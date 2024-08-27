@@ -1,5 +1,4 @@
 <?php
-error_reporting(E_ALL ^ E_DEPRECATED);
 require_once __DIR__ . '/functions/Connection.php';
 require_once __DIR__ . '/template.php';
 ?>
@@ -37,7 +36,6 @@ require_once __DIR__ . '/template.php';
                     &nbsp;
                 </tr>
 
-                <!-- OIL PALM -->
                 <?php ShowData($_GET['estate'], "OIL PALM"); ?>
                 <?php ShowData($_GET['estate'], "RUBBER"); ?>
 
@@ -66,6 +64,10 @@ require_once __DIR__ . '/template.php';
         </select>
         <input type="submit" value="TAMPILKAN">
     </form>
+    <br><br>
+    <div style="text-align: center;">
+        <span>2024 &copy; Azhar. <a href=""></a></span>
+    </div>
 
     <script src="../public/js/exportToExcel.js" defer></script>
 </body>

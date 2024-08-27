@@ -18,6 +18,14 @@
             "dest": "/api/client.php"
         },
         {
+            "src": "/login.php",
+            "dest": "/api/login.php"
+        },
+        {
+            "src": "/logout.php",
+            "dest": "/api/logout.php"
+        },
+        {
             "src": "/public/(.*)",
             "dest": "/$1"
         },
