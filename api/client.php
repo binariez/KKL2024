@@ -2,9 +2,9 @@
 require_once __DIR__ . '/functions/Auth.php';
 require_once __DIR__ . '/template.php';
 
-if (!cekLogin()) {
-    header("Location: login.php");
-}
+// if (!cekLogin()) {
+//     header("Location: login.php");
+// }
 ?>
 
 <!DOCTYPE html>
