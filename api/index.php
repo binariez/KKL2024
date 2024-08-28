@@ -1,8 +1,11 @@
 <?php
-require_once __DIR__ . '/functions/Auth.php';
+require_once __DIR__ . '/functions/Sessions.php';
 require_once __DIR__ . '/template.php';
-if (!cekLogin()) {
-    header("Location: login.php");
+
+try {
+    $session = NSessionHandler::cekLogin();
+} catch (Exception $e) {
+    header('Location: login.php');
 }
 ?>
 

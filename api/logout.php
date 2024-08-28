@@ -1,4 +1,4 @@
 <?php
-require_once __DIR__ . '/functions/Auth.php';
-unsetLogin();
+require_once __DIR__ . '/functions/Sessions.php';
+NSessionHandler::logout();
 header("Location: login.php");

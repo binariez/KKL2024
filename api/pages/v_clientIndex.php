@@ -15,8 +15,8 @@
                 <div class="card-content">
                     <div class="card-body">
                         Selamat datang <br>
-                        Username: <?= $_SESSION['username'] ?><br>
-                        Estate: <?= strtoupper($_SESSION['estate']) ?>
+                        Username: <?= $session->username ?><br>
+                        Estate: <?= strtoupper($session->estate) ?>
                     </div>
                 </div>
             </div>

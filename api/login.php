@@ -1,17 +1,25 @@
 <?php
-require_once __DIR__ . '/functions/Auth.php';
 
-if (cekLogin()) {
-    header("Location: client.php");
+use Firebase\JWT\JWT;
+
+require_once __DIR__ . '/functions/Sessions.php';
+
+if ($_COOKIE['UserEstate']) {
+    $jwt = $_COOKIE['UserEstate'];
+    try {
+        JWT::decode($jwt, $_ENV['JWT_SECRET_KEY'], ['HS256']);
+        header("Location: client.php");
+    } catch (Exception) {
+    }
 }
 
 if (isset($_POST['txtusername']) && isset($_POST['txtpassword'])) {
     $username = $_POST['txtusername'];
     $password = $_POST['txtpassword'];
 
-    if (cekAuth($username, $password)) {
-        $estate = getEstate($username);
-        setLogin($username, $estate);
+    if (NSessionHandler::cekAuth($username, $password)) {
+        $estate = NSessionHandler::getEstate($username);
+        NSessionHandler::setLogin($username, $estate);
 
         echo "
         <script>
