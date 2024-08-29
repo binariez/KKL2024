@@ -56,7 +56,7 @@ class NSessionHandler
 
     public static function cekLogin(): Session
     {
-        if ($_COOKIE['UserEstate']) {
+        if (isset($_COOKIE['UserEstate'])) {
             $jwt = $_COOKIE['UserEstate'];
             try {
                 $payload = JWT::decode($jwt, $_ENV['JWT_SECRET_KEY'], ['HS256']);
