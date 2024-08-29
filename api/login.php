@@ -52,7 +52,6 @@ if (isset($_POST['txtusername']) && isset($_POST['txtpassword'])) {
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/static/js/initTheme.js"></script>
     <div id="auth">
         <div class="row h-100">
             <div class="container col-12 d-flex justify-content-center align-items-center">

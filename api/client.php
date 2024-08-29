@@ -28,7 +28,6 @@ try {
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/static/js/initTheme.js"></script>
     <div id="app">
         <div id="sidebar">
             <div class="sidebar-wrapper active">

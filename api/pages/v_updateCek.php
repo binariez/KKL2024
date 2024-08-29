@@ -14,7 +14,7 @@
             <div class="card">
                 <div class="card-content">
                     <div class="card-body">
-                        <form action="functions/GetFields.php" method="get" class="form form-vertical">
+                        <form action="" method="get" class="form form-vertical">
                             <div class="form-body">
                                 <div class="row d-flex flex-column">
                                     <div class="col-12">
@@ -147,7 +147,7 @@
                 document.getElementById("field").innerHTML = this.responseText;
             }
         };
-        xmlhttp.open("GET", "functions/GetFields.php?estate=<?= $session->estate ?>&kategori=" + kat, true);
+        xmlhttp.open("GET", "GetFields.php?estate=<?= $session->estate ?>&kategori=" + kat, true);
         xmlhttp.send();
     }
 </script>
