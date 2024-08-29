@@ -1,7 +1,7 @@
 <div class="page-title">
     <div class="row">
         <div class="col-12 col-md-6 order-md-1 order-last">
-            <h3>Input Pengecekan</h3>
+            <h3>Update Pengecekan</h3>
             <!-- <p class="text-subtitle text-muted">Multiple form layouts, you can use.</p> -->
         </div>
     </div>
@@ -14,7 +14,7 @@
             <div class="card">
                 <div class="card-content">
                     <div class="card-body">
-                        <form action="functions/GetFields.php" method="get" class="form form-vertical">
+                        <form action="" method="get" class="form form-vertical">
                             <div class="form-body">
                                 <div class="row d-flex flex-column">
                                     <div class="col-6">
@@ -43,23 +43,17 @@
                                     <div class="col-6">
                                         <div class="form-group">
                                             <label for="estate">Estate</label>
-                                            <select id="estate" name="estate" class="form-select" required onchange="showFields(this.value)">
-                                                <option value="" hidden>-Pilih Estate-</option>
-                                                <option value="gbe">GURACH BATU</option>
-                                                <option value="kpe">KWALA PIASA</option>
-                                                <option value="sbe">SEI BALAI</option>
-                                                <option value="sre">SERBANGAN</option>
-                                                <option value="tre">TANAH RAJA</option>
-                                            </select>
+                                            <input type="text" name="estate" id="estate" class="form-control" value="<?= strtoupper($session->estate) ?>" readonly>
                                         </div>
                                     </div>
 
                                     <div class="col-6">
                                         <div class="form-group">
                                             <label for="kategori">Kategori</label>
-                                            <select name="kategori" id="kategori" class="form-select" required>
-                                                <option value="oilpalm">OIL PALM</option>
-                                                <option value="rubber">RUBBER</option>
+                                            <select name="kategori" id="kategori" class="form-select" required onchange="showFields(this.value)">
+                                                <option value="" hidden>-Pilih Kategori-</option>
+                                                <option value="OIL PALM">OIL PALM</option>
+                                                <option value="RUBBER">RUBBER</option>
                                             </select>
                                         </div>
                                     </div>
@@ -67,7 +61,7 @@
                                     <div class="col-6">
                                         <div class="form-group"><label for="field">Field</label>
                                             <select name="field" id="field" class="form-select" required>
-                                                <option value="" hidden>-Pilih Estate Terlebih Dahulu-</option>
+                                                <option value="" hidden>-Pilih Kategori Terlebih Dahulu-</option>
                                             </select>
                                         </div>
                                     </div>
@@ -103,7 +97,7 @@
                                     </div>
 
                                     <div class="col-6 mb-2" id="tglPerbaikan" style="display: none;">
-                                        <label for="datepicker">Tanggal perbaikan jika <b>sudah </b>diperbaiki. <br>Kosongkan jika <b>belum.</b></label>
+                                        <label for="datepicker">Isi tanggal perbaikan jika <b>sudah </b>diperbaiki. <br>Kosongkan jika <b>belum.</b></label>
                                         <div id="datepicker" class="form-group date" data-date-format="dd-mm-yyyy">
                                             <input class="form-control" type="text" name="tglPerbaikan" readonly />
                                             <span class="input-group-addon">
@@ -112,7 +106,7 @@
                                     </div>
 
                                     <div class="col-6 d-grid mt-4">
-                                        <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
+                                        <input type="submit" name="updateCek" value="Submit" class="btn btn-primary me-1 mb-1">
                                     </div>
                                 </div>
                             </div>
@@ -146,19 +140,14 @@
         });
     });
 
-    function showFields(est) {
-        if (est == "") {
-            document.getElementById("field").innerHTML = "";
-            return;
-        } else {
-            var xmlhttp = new XMLHttpRequest();
-            xmlhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("field").innerHTML = this.responseText;
-                }
-            };
-            xmlhttp.open("GET", "functions/GetFields.php?estate=" + est, true);
-            xmlhttp.send();
-        }
+    function showFields(kat) {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("field").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET", "functions/GetFields.php?estate=<?= $session->estate ?>&kategori=" + kat, true);
+        xmlhttp.send();
     }
 </script>

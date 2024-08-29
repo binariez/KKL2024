@@ -16,7 +16,15 @@
                     <div class="card-body">
                         Selamat datang <br>
                         Username: <?= $session->username ?><br>
-                        Estate: <?= strtoupper($session->estate) ?>
+                        Estate: <?= strtoupper($session->estate) ?><br><br>
+                        <?php if (isset($_GET['m'])) {
+                        ?>
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                Update Berhasil!
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        <?php
+                        } ?>
                     </div>
                 </div>
             </div>

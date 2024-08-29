@@ -47,7 +47,6 @@ if (isset($_POST['txtusername']) && isset($_POST['txtpassword'])) {
 
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/compiled/css/app.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/compiled/css/app-dark.css">
     <link rel="stylesheet" href="../public/login.css">
 </head>
 

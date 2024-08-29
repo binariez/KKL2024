@@ -40,3 +40,5 @@ function Ceklis($bln, $thn, $field, $w1a, $w1b, $w1c, $w2a, $w2b, $w2c, $w3a, $w
     );
     return $arr;
 }
+
+function updateDoc($id) {}

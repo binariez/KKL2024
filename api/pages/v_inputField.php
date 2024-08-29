@@ -10,7 +10,7 @@
 <!-- Basic Vertical form layout section start -->
 <section id="basic-vertical-layouts" class="flex-shrink-0">
     <div class="row match-height">
-        <div class="col-12">
+        <div class="col-6">
             <div class="card">
                 <div class="card-content">
                     <div class="card-body">
@@ -53,7 +53,7 @@
                                         </div>
                                     </div>
                                     <div class="col-12 d-grid">
-                                        <button type="submit" class="btn btn-primary me-1 mb-1">Submit</button>
+                                        <input type="submit" name="inputField" value="Submit" class="btn btn-primary me-1 mb-1">
                                     </div>
                                 </div>
                             </div>

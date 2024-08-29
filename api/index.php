@@ -1,6 +1,5 @@
 <?php
 require_once __DIR__ . '/functions/Sessions.php';
-require_once __DIR__ . '/template.php';
 
 try {
     $session = NSessionHandler::cekLogin();
@@ -54,22 +53,21 @@ try {
             onclick="exportToExcel('data')" />
     </div>
 
-    <hr><br><br>
-    <a href="client.php"><button>Halaman Client</button></a>
-    <br><br>
-    <hr><br>
 
-    <form action="" method="get">
-        <label for="est">Pilih Estate untuk ditampilkan datanya</label><br>
-        <select id="est" name="estate">
-            <option value="gbe">GURACH BATU</option>
-            <option value="kpe">KWALA PIASA</option>
-            <option value="sbe">SEI BALAI</option>
-            <option value="sre">SERBANGAN</option>
-            <option value="tre">TANAH RAJA</option>
-        </select>
-        <input type="submit" value="TAMPILKAN">
-    </form>
+    <div class="form-container">
+        <label>Pilih Estate untuk ditampilkan datanya</label><br>
+        <form action="" method="get" class="form">
+            <select id="est" name="estate">
+                <option value="gbe">GURACH BATU</option>
+                <option value="kpe">KWALA PIASA</option>
+                <option value="sbe">SEI BALAI</option>
+                <option value="sre">SERBANGAN</option>
+                <option value="tre">TANAH RAJA</option>
+            </select>
+            <input class="btn tampil" type="submit" value="TAMPILKAN">
+        </form><br>
+        <a href="client.php"><button class="btn client">Halaman Client</button></a>
+    </div>
     <br><br>
     <div style="text-align: center;">
         <span>2024 &copy; Azhar. <a href=""></a></span>

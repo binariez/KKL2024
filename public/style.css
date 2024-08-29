@@ -10,3 +10,43 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+select {
+    background-color: #d3ebe4;
+    width: auto;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+.btn {
+    padding: 0.4rem;
+    border-radius: 0.2rem;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.tampil {
+    background-color: #04aa6d;
+}
+.client {
+    background-color: #9bb4e0;
+}
+
+.form-container .form #est {
+    margin-right: 1rem;
+}
+
+.form-container .form label {
+    margin-bottom: 1rem;
+}

@@ -1,6 +1,6 @@
 <?php
 require_once __DIR__ . '/functions/Sessions.php';
-require_once __DIR__ . '/template.php';
+require_once __DIR__ . '/CRUD.php';
 
 try {
     $session = NSessionHandler::cekLogin();
@@ -20,7 +20,6 @@ try {
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/compiled/css/app.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/compiled/css/app-dark.css">
     <!-- DATEPICKER -->
     <link id="bsdp-css" href="https://unpkg.com/bootstrap-datepicker@1.9.0/dist/css/bootstrap-datepicker3.min.css" rel="stylesheet">
     <script src="https://unpkg.com/bootstrap-datepicker@1.9.0/dist/js/bootstrap-datepicker.min.js"></script>
@@ -67,7 +66,7 @@ try {
                             class="sidebar-item  ">
                             <a href="client.php?i=pengecekan" class='sidebar-link'>
                                 <i class="bi bi-check-square-fill"></i>
-                                <span>Input Pengecekan</span>
+                                <span>Update Pengecekan</span>
                             </a>
                         </li>
 
@@ -75,7 +74,7 @@ try {
                             class="sidebar-item  ">
                             <a href="index.php" class='sidebar-link'>
                                 <i class="bi bi-table"></i>
-                                <span>Lihat Data</span>
+                                <span>Tabel Data</span>
                             </a>
                         </li>
 
@@ -109,7 +108,7 @@ try {
                             include_once "pages/v_inputField.php";
                             break;
                         case "pengecekan":
-                            include_once "pages/v_inputCek.php";
+                            include_once "pages/v_updateCek.php";
                             break;
                         default:
                             header("Location: client.php");
@@ -128,7 +127,6 @@ try {
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/static/js/components/dark.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/compiled/js/app.js"></script>
 </body>
