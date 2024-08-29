@@ -87,7 +87,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-md-12 col-6 mb-2">
+                                    <div class="col-12 mb-2">
                                         <div class="form-check">
                                             <div class="checkbox">
                                                 <input type="checkbox" id="kerusakan" name="kerusakan" value="true" class="form-check-input">
@@ -96,7 +96,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-md-12 col-6 mb-2" id="tglPerbaikan" style="display: none;">
+                                    <div class="col-12 mb-2" id="tglPerbaikan" style="display: none;">
                                         <label for="datepicker">Isi tanggal perbaikan jika <b>sudah </b>diperbaiki. <br>Kosongkan jika <b>belum.</b></label>
                                         <div id="datepicker" class="form-group date" data-date-format="dd-mm-yyyy">
                                             <input class="form-control" type="text" name="tglPerbaikan" readonly />
