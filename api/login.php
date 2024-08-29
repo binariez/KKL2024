@@ -4,7 +4,7 @@ use Firebase\JWT\JWT;
 
 require_once __DIR__ . '/functions/Sessions.php';
 
-if ($_COOKIE['UserEstate']) {
+if (isset($_COOKIE['UserEstate'])) {
     $jwt = $_COOKIE['UserEstate'];
     try {
         JWT::decode($jwt, $_ENV['JWT_SECRET_KEY'], ['HS256']);
@@ -38,7 +38,7 @@ if (isset($_POST['txtusername']) && isset($_POST['txtpassword'])) {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">

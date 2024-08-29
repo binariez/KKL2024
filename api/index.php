@@ -9,7 +9,7 @@ try {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta http-equiv="content-type" content="application/vnd.ms-excel; charset=UTF-8">
