@@ -26,6 +26,10 @@
             "dest": "/api/logout.php"
         },
         {
+            "src": "/functions/GetFields.php",
+            "dest": "/api/functions/GetFields.php"
+        },
+        {
             "src": "/public/(.*)",
             "dest": "/$1"
         },
