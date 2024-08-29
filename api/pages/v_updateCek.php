@@ -17,7 +17,7 @@
                         <form action="" method="get" class="form form-vertical">
                             <div class="form-body">
                                 <div class="row d-flex flex-column">
-                                    <div class="col-6">
+                                    <div class="col-12">
                                         <form-group>
                                             <label for="bln_thn">Bulan dan Tahun</label>
                                             <div class="input-group mb-2" id="bln_thn">
@@ -40,14 +40,14 @@
                                         </form-group>
                                     </div>
 
-                                    <div class="col-6">
+                                    <div class="col-12">
                                         <div class="form-group">
                                             <label for="estate">Estate</label>
                                             <input type="text" name="estate" id="estate" class="form-control" value="<?= strtoupper($session->estate) ?>" readonly>
                                         </div>
                                     </div>
 
-                                    <div class="col-6">
+                                    <div class="col-12">
                                         <div class="form-group">
                                             <label for="kategori">Kategori</label>
                                             <select name="kategori" id="kategori" class="form-select" required onchange="showFields(this.value)">
@@ -58,7 +58,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-6">
+                                    <div class="col-12">
                                         <div class="form-group"><label for="field">Field</label>
                                             <select name="field" id="field" class="form-select" required>
                                                 <option value="" hidden>-Pilih Kategori Terlebih Dahulu-</option>
@@ -66,7 +66,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-6">
+                                    <div class="col-12">
                                         <div class="form-group">
                                             <label for="week">Week</label>
                                             <select name="week" id="week" class="form-select">
@@ -78,7 +78,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-6 mb-2">
+                                    <div class="col-12 mb-2">
                                         <div class="form-check">
                                             <div class="checkbox">
                                                 <input type="checkbox" id="pengecekan" name="pengecekan" value="true" class="form-check-input">
@@ -87,7 +87,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-6 mb-2">
+                                    <div class="col-md-12 col-6 mb-2">
                                         <div class="form-check">
                                             <div class="checkbox">
                                                 <input type="checkbox" id="kerusakan" name="kerusakan" value="true" class="form-check-input">
@@ -96,7 +96,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-6 mb-2" id="tglPerbaikan" style="display: none;">
+                                    <div class="col-md-12 col-6 mb-2" id="tglPerbaikan" style="display: none;">
                                         <label for="datepicker">Isi tanggal perbaikan jika <b>sudah </b>diperbaiki. <br>Kosongkan jika <b>belum.</b></label>
                                         <div id="datepicker" class="form-group date" data-date-format="dd-mm-yyyy">
                                             <input class="form-control" type="text" name="tglPerbaikan" readonly />
@@ -105,7 +105,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-6 d-grid mt-4">
+                                    <div class="col-md-12 col-6 d-grid mt-4">
                                         <input type="submit" name="updateCek" value="Submit" class="btn btn-primary me-1 mb-1">
                                     </div>
                                 </div>

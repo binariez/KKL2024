@@ -10,7 +10,7 @@
 <!-- Basic Vertical form layout section start -->
 <section id="basic-vertical-layouts" class="flex-shrink-0">
     <div class="row match-height">
-        <div class="col-6">
+        <div class="col-12">
             <div class="card">
                 <div class="card-content">
                     <div class="card-body">

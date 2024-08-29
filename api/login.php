@@ -55,7 +55,7 @@ if (isset($_POST['txtusername']) && isset($_POST['txtpassword'])) {
     <script src="https://cdn.jsdelivr.net/gh/zuramai/mazer@docs/demo/assets/static/js/initTheme.js"></script>
     <div id="auth">
         <div class="row h-100">
-            <div class="container col-6 d-flex justify-content-center align-items-center">
+            <div class="container col-12 d-flex justify-content-center align-items-center">
                 <div id="auth-left">
                     <h1 class="auth-title text-center">Log in.</h1>
                     <p class="auth-subtitle mb-5">Login dengan data autentikasi masing-masing estate.</p>
