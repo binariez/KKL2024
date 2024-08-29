@@ -38,7 +38,7 @@ if (isset($_POST['txtusername']) && isset($_POST['txtpassword'])) {
 ?>
 
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-bs-theme="light">
 
 <head>
     <meta charset="UTF-8">
