@@ -53,7 +53,6 @@ try {
             onclick="exportToExcel('data')" />
     </div>
 
-
     <div class="form-container">
         <label>Pilih Estate untuk ditampilkan datanya</label><br>
         <form action="" method="get" class="form">
